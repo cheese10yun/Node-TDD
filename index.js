@@ -8,6 +8,6 @@ process.env.NODE_ENV === 'test' ? app.use(morgan('dev')):false;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extends: true}));
 
-app.use('/users', user);
+app.use('/users', user); //주석 추가.
 
 module.exports = app;
