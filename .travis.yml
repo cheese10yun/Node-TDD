@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- 0.7
+- "0.7"
 before_install:
-  - npm install -g mocha
+  - "npm install -g mocha"
 install:
-  - npm install
+  - "npm install"
 script:
-  - npm test
+  - "npm test"
 branches:
   only:
     - master
