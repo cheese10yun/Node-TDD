@@ -6,6 +6,8 @@
   "scripts": {
     "test": "NODE_ENV=test mocha api/user/user.spec.js",
     "start": "node bin/www.js",
+    "cover": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha api/user/user.spec.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint ."
   },
   "author": "",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "coveralls": "^2.13.1",
     "eslint": "^4.7.2",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.3.0",
     "should": "^11.2.1",
