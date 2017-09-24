@@ -1,6 +1,7 @@
-# TDD
-
+[![Coverage Status](https://coveralls.io/repos/github/cheese10yun/travis-ci-node/badge.svg?branch=master)](https://coveralls.io/github/cheese10yun/travis-ci-node?branch=master)
 [![Build Status](https://travis-ci.org/cheese10yun/travis-ci-node.svg?branch=master)](https://travis-ci.org/cheese10yun/travis-ci-node)
+
+# TDD
 
 ## NPM Module
 * mocha
