@@ -48,8 +48,8 @@ describe('Get /users/:id', () => {
         .end((err, res) => {
           res.body.should.have.property('id', 1);
           done();
-        })
-    })
+        });
+    });
   });
   describe('실패시', () => {
     it('id가  숫자가 아닐 경우 400으로 응답한다.', (done) => {
@@ -121,7 +121,7 @@ describe('POST /users', () => {
         .post('/users')
         .send({})
         .expect(400)
-        .end(done)
+        .end(done);
     });
     it('name이 중복일 경우 4009를 반환한다.', (done) => {
       request(app)
@@ -129,7 +129,7 @@ describe('POST /users', () => {
         .send({name: 'yun'})
         .expect(409)
         .end(done);
-    })
+    });
   });
 });
 
@@ -146,7 +146,7 @@ describe('PUT /users/:id', () => {
         .end((err, res) => {
           res.body.should.have.property('name', name);
           done();
-        })
+        });
     });
   });
   
@@ -179,5 +179,4 @@ describe('PUT /users/:id', () => {
         .end(done);
     });
   });
-  
 });
