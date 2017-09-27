@@ -7,7 +7,7 @@ router.get('/', ctrl.index);
 router.post('/', ctrl.create);
 router.get('/:id', ctrl.findById);
 router.delete('/:id', ctrl.deleteById);
-router.put('/:id', ctrl.updateById);
+router.put('/:id', ctrl.updateById); // 주석 추가
 
 
 module.exports = router;
