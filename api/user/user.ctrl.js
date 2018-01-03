@@ -22,7 +22,6 @@ ctrl.findById = (req, res) => {
   const id = parseInt(req.params.id, 10);
   if (Number.isNaN(id)) return res.status(400).end();
 
-
   models.User.findOne({
     where: {
       id: id
