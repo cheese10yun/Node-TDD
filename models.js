@@ -11,4 +11,5 @@ const User = sequelize.define('User',{
     unique: true
   }
 });
+
 module.exports = {Sequelize, sequelize, User};
