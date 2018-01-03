@@ -4,6 +4,7 @@ const app = require('../../index');
 const models = require('../../models');
 
 describe('Get /users', () => {
+
   const users = [{name: 'yun'}, {name: 'test'}, {name: 'sek'}];
   before(() => models.sequelize.sync({force: true}));
   before(() => models.User.bulkCreate(users));
